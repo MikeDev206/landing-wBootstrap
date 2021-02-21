@@ -1,0 +1,180 @@
+/* custom properties */
+:root {
+  --primary-black: #222222;
+  --primary-cream: #ecce90;
+  --secondary-black: #332c22;
+  --secondary-cream: #d7bb8b;
+  --dark-cream: #a87a16;
+  --white: #ffffff;
+  --contrast-footer: #fcfcfc;
+  --size-title: 40px;
+  --size-title-mobile: 30px;
+  --size-subtitle: 30px;
+  --size-subtitle-mobile: 25px;
+  --items-nav-footer: 16px;
+  --caption: 12px;
+  --body: 18px;
+  --body-mobile: 14px;
+  --card-unit: 24px;
+  --card-unit-mobile: 15px;
+  --card-price: 32px;
+  --card-price-mobile: 28px;
+  --button: 14px;
+  --font-secondary: "Poiret One", cursive;
+  --font-principal: "Raleway", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-principal);
+  font-size: var(--body-mobile);
+}
+
+h1,
+h2 {
+  font-size: var(--size-title-mobile);
+  font-family: var(--font-secondary);
+}
+
+h5 {
+  font-size: var(--size-subtitle-mobile);
+}
+
+/* header section*/
+
+.header {
+  background-image: url("../assets/images/backgounds/coffee-hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.header .head-layer {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header .head-layer h1 {
+  color: var(--white);
+}
+
+.header .head-layer .icon-arrow {
+  position: absolute;
+  top: 70vh;
+  left: 45%;
+}
+
+/*our products section*/
+
+.our-products {
+  background-color: var(--primary-cream);
+}
+
+.our-products .wrapper-title-img{
+  position: relative;
+}
+
+.our-products .wrapper-title-img .shape-title{
+  background-color: var(--secondary-black);
+  color: var(--primary-cream);
+  border-radius: 0 75px;
+  height: 98px;
+  pad: 10px 20px;
+  text-align: center;
+}
+
+.our-products .wrapper-title-img .img-spoon{
+  width: 100%;
+  position: absolute;
+  top: 76%;
+  right: -10px;
+}
+
+.our-products .card {
+  background-color: var(--secondary-cream);
+  border-radius: 10px;
+  border: none;
+  padding: 25px;
+  max-width: 80%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.8s ease;
+}
+
+.our-products .card:hover {
+  transform: scale(1.1);
+  box-shadow: none;
+  filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.3));
+}
+
+.our-products .card .img-product {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.our-products .card .product-detail-price {
+  color: var(--secondary-black);
+  font-size: 28px;
+}
+
+.our-products .card .product-detail-price span {
+  color: var(--dark-cream);
+  font-size: 15px;
+}
+
+.our-products .card .btn-primary {
+  background-color: var(--secondary-black);
+  color: var(--primary-cream);
+  border-radius: 100px;
+  border: none;
+  padding: 2 8px;
+}
+/* Media queries */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: var(--body);
+  }
+  h1,
+  h2 {
+    font-size: var(--size-title);
+  }
+  h5 {
+    font-size: var(--size-subtitle);
+  }
+  /*header section*/
+
+  .header {
+    background-image: url("../assets/images/backgounds/coffee-hero.jpg");
+  }
+
+  /*our products*/
+  .our-products .wrapper-title-img .img-spoon{
+    top: 56%;
+    right: -18px;
+  }
+
+  .our-products .card {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* our products */
+  .our-products .wrapper-title-img .img-spoon {
+    width: 80%;
+    top: 50%;
+    right: -18px;
+  }
+  .our-products .card {
+    max-width: 90%;
+  }
+  .our-products .card .img-product {
+    width: 100%;
+  }
+}
