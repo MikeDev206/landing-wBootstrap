@@ -45,9 +45,17 @@ h5 {
   font-size: var(--size-subtitle-mobile);
 }
 
+button {
+  outline: none!important;
+}
+
 /*navbar section*/
 
 .navbar {
+  background-color: var(--primary-black);
+}
+
+button .bg-dark{
   background-color: var(--primary-black);
 }
 
@@ -63,6 +71,9 @@ h5 {
   left: 39px;
 }
 
+.line-dos {
+  display: none;
+}
 .login {
   color: #ffffff;
   border: 1px solid #a87a16;
@@ -218,6 +229,15 @@ h5 {
   }
 }
 @media only screen and (min-width: 1024px) {
+  /*navbar*/
+  .line-dos {
+    width: 14px;
+    height: 20px;
+  }
+
+  .shop {
+    max-width: none;
+  }
   /* our products */
   .our-products .wrapper-title-img .img-spoon {
     width: 80%;

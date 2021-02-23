@@ -23,11 +23,11 @@
     <a class="navbar-brand" href="#">
       <img class="img-logo" src="./assets/icons/logo.svg" alt="logo">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <button class="navbar-toggler navbar-dark " type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Inicio</a>
@@ -38,7 +38,8 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Contacto</a>
         </li>
-        <img class="line mt-3" src="./assets/icons/Rectangle 563.png" alt="line-nav">
+        <img class="line d-lg-none mt-3" src="./assets/icons/Rectangle 563.png" alt="line-nav">
+        <img class="line-dos d-lg-block mt-3" src="./assets/icons/line-hero.svg" alt="line-nav">
       </ul>
       <div class="row align-items-center justify-content-between justify-content-md-center mt-2 shop">
         <div class="col-6 col-md-6">
@@ -49,8 +50,10 @@
         </button>
       </div>
         <div class="col-6 col-md-6">
-          <button class="btn login">
+          <button class="btn login nav-item">
+            <a href="#">
               INICIAR SESIÓN
+            </a>
           </button>
         </div>
       </div>
