@@ -33,7 +33,6 @@
 body {
   font-family: var(--font-principal);
   font-size: var(--body-mobile);
-  max-width: 1024px;
 }
 
 h1,
@@ -64,6 +63,19 @@ h5 {
   left: 39px;
 }
 
+.login {
+  color: #ffffff;
+  border: 1px solid #a87a16;
+  border-radius: 8px;
+  background-color: var(--primary-black);
+  font-size: 12px;
+  padding: 5px;
+}
+
+.cart img {
+  border: none;
+  background-color: var(--primary-black);
+}
 
 /* header section*/
 
@@ -166,7 +178,6 @@ h5 {
   background-size: cover;
   height: 100vh;
   position: absolute;
-  background: linear-gradient(0deg, #ECCE90, #ECCE90);
 }
 
 
