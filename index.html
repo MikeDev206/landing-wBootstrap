@@ -44,11 +44,11 @@
       <div class="row align-items-center justify-content-between justify-content-md-center mt-2 shop">
         <div class="col-6 col-md-6">
           <button class="btn cart">
-          <a href="#">
-            <img src="./assets/icons/cart.svg" alt="cart">
-          </a>
-        </button>
-      </div>
+            <a href="#">
+              <img src="./assets/icons/cart.svg" alt="cart">
+            </a>
+          </button>
+        </div>
         <div class="col-6 col-md-6">
           <button class="btn login nav-item">
             <a href="#">
@@ -211,16 +211,45 @@
   </section>
 
   <section class="container-fluid contact">
-    <div class="row">
-      <div class="container contact-dos">
+    <div class="row contact-layer">
+      <div class="container">
         <div class="col-12 col-md6">
           <!--title-->
-          <h5>¿Un Cafecito?</h5>
-          <p>Con gusto <br>
-          te lo llevamos</p>
+          <div class="row d-flex align-items-center justify-content-between mb-1 ">
+            <div class="col-8 col-md-12">
+              <h5 class="title-cafecito">
+                ¿Un Cafecito?
+              </h5>
+              <p class="texto-cafecito">
+                Con gusto <br>
+                te lo llevamos
+              </p>
+            </div>
+            <div class="col-4 col-md-12">
+              <img src="./assets/images/varios/cup-coffe-mobile.png" alt="cafecito" class="img-cafecito d-md-none">
+              <img src="./assets/images/varios/cup-coffe.png" alt="cafecito" class="img-cafecito-big d-md-block">
+            </div>
+          </div>
         </div>
         <div class="col-12 col-md6">
           <!--form-->
+          <form>
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Adicto al café">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="quierocafe@email.com">
+            </div>
+            <div class="form-group">
+              <label for="how-is-coffee">Cuéntanos... ¿Cómo es tu café ideal?</label>
+              <textarea class="form-control" id="how-is-coffee" rows="3" placeholder="Mi café ideal es..."></textarea>
+            </div>
+            <div class="form-group d-flex justify-content-center">
+              <button type="submit" class="btn login nav-item mb-2">QUIERO CAFÉ</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

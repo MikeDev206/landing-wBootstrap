@@ -46,7 +46,7 @@ h5 {
 }
 
 button {
-  outline: none!important;
+  outline: none !important;
 }
 
 /*navbar section*/
@@ -59,12 +59,12 @@ button {
   background-image: url(../assets/images/varios/Vector.png);
 }
 
-button .bg-dark{
+button .bg-dark {
   background-color: var(--primary-black);
 }
 
-.nav-item a{
-  font-family: 'Raleway', sans-serif;
+.nav-item a {
+  font-family: "Raleway", sans-serif;
   color: #ffffff;
 }
 
@@ -124,11 +124,11 @@ button .bg-dark{
   background-color: var(--primary-cream);
 }
 
-.our-products .wrapper-title-img{
+.our-products .wrapper-title-img {
   position: relative;
 }
 
-.our-products .wrapper-title-img .shape-title{
+.our-products .wrapper-title-img .shape-title {
   background-color: var(--secondary-black);
   color: var(--primary-cream);
   border-radius: 0 75px;
@@ -137,7 +137,7 @@ button .bg-dark{
   text-align: center;
 }
 
-.our-products .wrapper-title-img .img-spoon{
+.our-products .wrapper-title-img .img-spoon {
   width: 100%;
   position: absolute;
   top: 76%;
@@ -187,16 +187,61 @@ button .bg-dark{
 /*contact section*/
 
 .contact {
-  background-image: url('../assets/images/backgounds/seed-mobile.jpg');
+  background-image: url("../assets/images/backgounds/seed-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
   position: absolute;
+}
+
+.contact .contact-layer {
+  background-color: rgba(236, 206, 144, 0.71);
+}
+
+.title-cafecito {
+  font-family: Poiret One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  /* identical to box height */
+  color: #1e1200;
+}
+
+.texto-cafecito {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #332c22;
 }
 
 
 
+label {
+  width: 269.38px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #332c22;
+}
+
+.form-control {
+  border: 1px solid #a87a16;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #aaaaaa;
+}
 
 /* Media queries */
 @media only screen and (min-width: 768px) {
@@ -223,7 +268,7 @@ button .bg-dark{
   }
 
   /*our products*/
-  .our-products .wrapper-title-img .img-spoon{
+  .our-products .wrapper-title-img .img-spoon {
     top: 56%;
     right: -18px;
   }
