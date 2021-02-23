@@ -55,6 +55,10 @@ button {
   background-color: var(--primary-black);
 }
 
+.navbar-dark .navbar-toggler-icon {
+  background-image: url(../assets/images/varios/Vector.png);
+}
+
 button .bg-dark{
   background-color: var(--primary-black);
 }
