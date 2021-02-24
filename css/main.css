@@ -71,8 +71,6 @@ button .bg-dark {
 .img-logo {
   width: 67px;
   height: 41.51px;
-  top: 17px;
-  left: 39px;
 }
 
 .line-dos {
@@ -191,7 +189,6 @@ button .bg-dark {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: absolute;
 }
 
 .contact .contact-layer {
@@ -217,9 +214,7 @@ button .bg-dark {
   color: #332c22;
 }
 
-
-
-label {
+.form-tags {
   width: 269.38px;
   font-family: Raleway;
   font-style: normal;
@@ -247,7 +242,49 @@ input::placeholder {
 
 .footer {
   background: var(--primary-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.info h5 {
+  color: var(--primary-cream);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.info p {
+  color: var(--contrast-footer);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.enlaces a {
+  color: var(--primary-cream);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.terminos a{
+  color: var(--contrast-footer);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
 
 /* Media queries */
 @media only screen and (min-width: 768px) {
